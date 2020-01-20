@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Users</title>
+</head>
+
+<body>
+<header>
+    <div>
+        <a href="../index.html" class="logo">University of PontyBridge</a>
+    </div>
+    <div>
+        <input type="checkbox" class="toggler" id="toggler">
+        <label class="menu-icon" for="toggler"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="addNew">
+    <h2>New users</h2>
+        <form name="addNew">
+            <label for="name">Name : <input type="text" id="name"></label>
+            <label for="barcode">Barcode : <input type="text" id="barcode"></label>
+             <label>Member Type : <select id="memberType">
+                 <option value="staff" >Staff</option>
+                 <option value="student">Student</option>
+             </select></label>
+             <input type="button" id="save_button" value="Save" />
+        </form>
+</div>
+
+<div id="search">
+    <h2>Search a user</h2>
+    <form>
+        <label for="search_input">Please Input  the user's name or barcode : <input type="text" id="search_input" placeholder="name or barcode"></label>
+        <input type="button" id="search_button" value="Search"/>
+    </form>
+</div>
+
+<div id="users">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Barcode</th>
+            <th>Member Type</th>
+            <th>Operation</th>
+        </tr>
+        </thead>
+        <tbody id="users_list"></tbody>
+    </table>  
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="../js/users.js"></script>
+</body>
+</html>

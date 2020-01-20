@@ -1,0 +1,13 @@
+References:
+
+image:
+	/images;
+
+css:
+	menu: 
+		title: Responsive Pure CSS Menu Tutorial (No Javascript);
+		author: FollowAndrew
+		author_link: https://www.youtube.com/watch?v=sjrp1FEHnyA&t=1607s;
+	prefix: 
+		website_link: https://autoprefixer.github.io/;
+

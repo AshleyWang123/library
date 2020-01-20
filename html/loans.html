@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Loans</title>
+</head>
+
+<body>
+<header>
+    <div>
+        <a href="../index.html" class="logo">University of PontyBridge</a>
+    </div>
+    <div>
+        <input type="checkbox" class="toggler" id="toggler">
+        <label class="menu-icon" for="toggler"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="loan">
+    <h2>Loan a book </h2>
+    <form>
+        <label for="user_input">User: <input type="text" id="user_input" placeholder="Enter the name or barcode :"></label>
+
+        <label for="book_input">Book: <input type="text" id="book_input" placeholder="Enter the title or ISBN"></label>
+
+        <label for="date_input">Due date: <input type="date" id="date_input"></label>
+        <input type="button" id="loan_button" value="Loan"/>
+    </form>
+</div>
+
+<div id="view">
+    <h2>view a user</h2>
+    <form>
+        <label for="view_input">Enter a user's name or barcode<input type="text" id="view_input" placeholder="name or barcode"></label>
+        <input type="button" id="view_button" value="view"/>
+    </form>
+</div>
+
+<div id="loans">
+    <table>
+        <thead>
+        <tr>
+            <th>Book</th>
+            <th>User</th>
+            <th>Issue Data</th>
+            <th>Due Data</th>
+        </tr>
+        </thead>
+        <tbody id="loans_list"></tbody>
+    </table>  
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="../js/loans.js"></script>
+</body>
+</html>

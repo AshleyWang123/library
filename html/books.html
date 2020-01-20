@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Books</title>
+</head>
+
+<body>
+<header>
+    <div>
+        <a href="../index.html" class="logo">University of PontyBridge</a>
+    </div>
+    <div>
+        <input type="checkbox" class="toggler" id="toggler">
+        <label class="menu-icon" for="toggler"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="addNew">
+    <h2>New Books</h2>
+    <form>
+        <label for="title">Title : <input type="text" id="title"></label>
+        <label for="isbn">ISBN : <input type="text" id="isbn"></label>
+        <label for="author">Author : <input type="text" id="author"></label>
+        <input type="button" id="save_button" value="Save" />
+    </form>
+</div>
+
+<div id="search">
+    <h2>Search a Book</h2>
+     <form>
+         <label for="search_input">Please Input  the book's title or author :<input type="text" id="search_input" placeholder="title or name"></label>
+         <input type="button" id="search_button" value="Search"/>
+     </form>
+</div>
+
+<div id="books">
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Author</th>
+            <th>Operation</th>
+        </tr>
+        </thead>
+        <tbody id="books_list"></tbody>
+    </table>  
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="loans.html">Loans</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="../js/books.js"></script>
+</body>
+</html>
