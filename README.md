@@ -1,4 +1,4 @@
-# CMT112-CW2-Library Server
+#Library Management Sysyem
 
 ## Installation
 
@@ -15,3 +15,19 @@ Before you run the server for the first time, you should ensure there is a datab
 ```
 node initialise_database.js
 ```
+## Running the Server
+
+```
+node server.js
+```
+
+## Opening Index.html
+### Pc: index books interface
+
+![image](index_phone.png)
+![image](Screenshot_books_pc.png)
+
+### Phone: loan book
+
+![image](Loan_book_phone.png)
+![image](Screenshot_hamburger_menu.png)
