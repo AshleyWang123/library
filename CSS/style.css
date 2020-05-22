@@ -134,34 +134,9 @@ table,th,td {
     text-align: center;
     margin: auto;
 }
-#addNew,#search,#books,#users,#loan,#view,#loans{
-    margin-top: 15%;
-
+#addNew,#search,#view,#books,#users,#loans,#loan{
+    margin-top: 9%;
 }
-
-/*footer*/
-footer {
-    background-color: #791B99;
-    width: 100%;
-    height: 3em;
-    float: left;
-    position: fixed;
-    bottom: 0;
-    overflow: hidden;
-
-}
-footer li {
-    float: left;
-    list-style: none;
-}
-footer a{
-    padding: 20px 30px;
-}
-
-td {
-    white-space: pre-wrap;
-}
-
 /* Responsive Laptop Screen */
 
 @media all and (min-width: 800px) {
@@ -185,5 +160,15 @@ td {
         display: none;
     }
 
-
+    #addNew,#search,#view,#loan{
+        margin-top: 9%;
+    }
+    #users{
+        margin-top: 5%;
+    }
+    #books,#loans{
+        margin-top: 5%;
+        width: 75%;
+        margin-left: 28%;
+    }
 }
